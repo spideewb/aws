@@ -1,4 +1,4 @@
-{
+ {
     "Version" :"2012-10-17",
     "Statement" : [
         {
@@ -6,7 +6,7 @@
             "Effect" : "Allow",
             "Action" :[
                 "s3:ListAllmyBuckets",
-                "s3:GetBucketLocation",
+                "s3:GetBucketLocation"
             ],
             "Resource" : "arn:aws:s3:::*"
        },
@@ -17,7 +17,7 @@
             "s3:ListBucket"
         ],
         "Resource" : [
-            "arn:aws:s3:::ac-catpics-xxx",    # create bucket names catpic and dogpic and upload some pics in cat and dog folder
+            "arn:aws:s3:::ac-catpics-xxx",   
             "arn:aws:s3:::ac-dogpics-xxx*"
     ]
 },
@@ -26,7 +26,7 @@
     "Effect" : "Allow",
     "Action" :"s3:*Objects",
    "Resource" : [
-                 "arn:aws:s3:::ac-dogpics-xxx/*" #user can acces only dog bucket objects
+                 "arn:aws:s3:::ac-dogpics-xxx/*"  
     ]
 }
     ]
